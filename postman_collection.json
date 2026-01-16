@@ -1,0 +1,229 @@
+{
+    "info": {
+        "name": "Me-API Playground",
+        "description": "API endpoints for the Me-API Playground application",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Health Check",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8000/health",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "health"
+                    ]
+                },
+                "description": "Check if the API is running"
+            }
+        },
+        {
+            "name": "Get Profile",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8000/api/profile",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "profile"
+                    ]
+                },
+                "description": "Get complete profile with all related data"
+            }
+        },
+        {
+            "name": "Update Profile",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8000/api/profile?name=John Doe&bio=Updated bio",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "profile"
+                    ],
+                    "query": [
+                        {
+                            "key": "name",
+                            "value": "John Doe"
+                        },
+                        {
+                            "key": "bio",
+                            "value": "Updated bio"
+                        }
+                    ]
+                },
+                "description": "Update profile information"
+            }
+        },
+        {
+            "name": "Get All Projects",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8000/api/projects",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "projects"
+                    ]
+                },
+                "description": "Get all projects"
+            }
+        },
+        {
+            "name": "Filter Projects by Skill (Python)",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8000/api/projects?skill=Python",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "projects"
+                    ],
+                    "query": [
+                        {
+                            "key": "skill",
+                            "value": "Python"
+                        }
+                    ]
+                },
+                "description": "Filter projects by skill/technology"
+            }
+        },
+        {
+            "name": "Filter Projects by Skill (React)",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8000/api/projects?skill=React",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "projects"
+                    ],
+                    "query": [
+                        {
+                            "key": "skill",
+                            "value": "React"
+                        }
+                    ]
+                },
+                "description": "Filter projects by React skill"
+            }
+        },
+        {
+            "name": "Get Top Skills",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8000/api/skills/top?limit=10",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "skills",
+                        "top"
+                    ],
+                    "query": [
+                        {
+                            "key": "limit",
+                            "value": "10"
+                        }
+                    ]
+                },
+                "description": "Get top N skills"
+            }
+        },
+        {
+            "name": "Search (FastAPI)",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8000/api/search?q=FastAPI",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "search"
+                    ],
+                    "query": [
+                        {
+                            "key": "q",
+                            "value": "FastAPI"
+                        }
+                    ]
+                },
+                "description": "Search across projects, skills, and profile"
+            }
+        },
+        {
+            "name": "Search (Python)",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8000/api/search?q=Python",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "search"
+                    ],
+                    "query": [
+                        {
+                            "key": "q",
+                            "value": "Python"
+                        }
+                    ]
+                },
+                "description": "Search for Python-related content"
+            }
+        }
+    ]
+}
