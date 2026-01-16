@@ -28,9 +28,11 @@ app.add_middleware(
 )
 
 
+from seed import seed_database
 @app.on_event("startup")
 def on_startup():
     create_db_and_tables()
+    seed_database()
 
 
 @app.get("/health")
