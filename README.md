@@ -259,7 +259,7 @@ This project is open source and available for personal and educational use.
 
 ## 👤 Resume Link
 
-**Your Resume**: [Add your resume link here]
+**Your Resume**: [Resume](https://drive.google.com/file/d/1DGYEl4zCxXKwzK-0sJ9XAcHSqe0zmTCy/view)
 
 ---
 

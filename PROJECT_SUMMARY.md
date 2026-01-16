@@ -203,7 +203,7 @@ See README.md for detailed deployment instructions.
 
 ## 📋 Resume Link Placeholder
 
-**TODO**: Add your resume link to the README.md file
+**Resume**: [Resume Link](https://drive.google.com/file/d/1DGYEl4zCxXKwzK-0sJ9XAcHSqe0zmTCy/view)
 
 ---
 
